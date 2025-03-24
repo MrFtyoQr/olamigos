@@ -41,7 +41,7 @@ export default function WordSearchPage() {
 
       // Convert the word search string to a 2D array
       const rows = data.word_search.word_search.split("\n")
-      const grid = rows.map((row) => row.split(" ").filter((cell) => cell))
+      const grid = rows.map((row: string) => row.split(" ").filter((cell) => cell))
       setGridArray(grid)
 
       // Reset found words
